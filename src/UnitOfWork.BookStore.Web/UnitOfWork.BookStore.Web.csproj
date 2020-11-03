@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DotNetDynamicInjector" Version="1.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\UnitOfWork.BookStore.Data.EFCore\UnitOfWork.BookStore.Data.EFCore.csproj" />
+    <ProjectReference Include="..\UnitOfWork.BookStore.Data.Dapper\UnitOfWork.BookStore.Data.Dapper.csproj" />
+    <ProjectReference Include="..\UnitOfWork.BookStore.Domain\UnitOfWork.BookStore.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

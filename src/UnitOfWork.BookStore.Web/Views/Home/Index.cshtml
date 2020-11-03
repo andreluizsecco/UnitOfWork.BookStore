@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1>UnitOfWork.BookStore</h1>
+    <div style="padding-top: 30px;padding-bottom: 30px;">
+        <a asp-action="CreateOrder" class="btn btn-success">Create Order</a>
+    </div>
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success"><strong>@TempData["Success"]</strong></div>
+    }
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger"><strong>@TempData["Error"]</strong></div>
+    }
+</div>
