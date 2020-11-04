@@ -29,7 +29,7 @@ namespace UnitOfWork.BookStore.Data.Dapper.Context
         {
             return new Connection()
             {
-                Database = 0,
+                Database = RepositoryHelpers.Utils.DataBaseType.SqlServer,
                 ConnectionString = _configuration.GetConnectionString($"DefaultConnection")
             };
         }
